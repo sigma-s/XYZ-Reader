@@ -1,0 +1,71 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/story_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:elevation="@dimen/card_elevation"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--suppress AndroidLintContentDescription -->
+        <com.example.xyzreader.ui.DynamicHeightNetworkImageView
+            android:id="@+id/thumbnail_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/photo_placeholder" />
+
+        <TextView
+            android:id="@+id/story_title"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/list_cardview_story_padding"
+            android:paddingTop="@dimen/list_cardview_story_padding"
+            android:paddingRight="@dimen/list_cardview_story_padding"
+            android:paddingBottom="@dimen/list_cardview_story_padding"
+            android:textColor="@color/gray_shade"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:backgroundTint="#263238"
+            android:backgroundTintMode="src_atop"  />
+
+        <TextView
+            android:id="@+id/story_date"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/list_cardview_story_padding"
+            android:paddingRight="@dimen/list_cardview_story_padding"
+            android:textColor="@color/black_shade"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:backgroundTint="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/story_author"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="@color/black_shade"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:backgroundTint="#FFFFFF"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,4 @@
+<resources>
+    <!-- list -->
+    <dimen name="appbar_max_size">56dp</dimen>
+</resources>
